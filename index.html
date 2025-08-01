@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Computer Science Graduate Student</title>
+    <title>Hompage - Sangeun Park</title>
     <style>
         * {
             margin: 0;
@@ -102,15 +102,17 @@
         }
 
         .card {
-            background: #f8f9fa;
-            border-radius: 10px;
-            padding: 25px;
-            border-left: 5px solid #0ea5e9;
+            /* background: #f8f9fa; */
+            /* border-radius: 5px; */
+            padding: 15px;
+            border-left: 4px solid #0ea5e9;
+            margin-bottom: 15px;
         }
 
         .card h3 {
+            margin-top: -8px;
             color: #2c3e50;
-            margin-bottom: 15px;
+            margin-bottom: 6px;
             font-size: 1.3em;
         }
 
@@ -147,19 +149,42 @@
         }
 
         .research-item {
-            background: #e3f2fd;
-            border-radius: 10px;
-            padding: 20px;
+            /* background: #e3f2fd; */
+            /* border-radius: 10px; */
+            padding: 15px;
             margin-bottom: 15px;
-            border-left: 4px solid #2196f3;
+            border-left: 4px solid #0ea5e9;
+        }
+        .research-item h3 {
+            margin-top: -8px;
+            color: #2c3e50;
+            margin-bottom: 5px;
+            font-size: 1.5em;
         }
 
-        .project-item {
-            background: #f1f8e9;
-            border-radius: 10px;
-            padding: 20px;
-            margin-bottom: 15px;
-            border-left: 4px solid #4caf50;
+        .publication-item {
+            margin-bottom: 20px;
+            padding: 15px;
+            background: #f9f9f9;
+            border-radius: 8px;
+            border-left: 4px solid #0ea5e9;
+        }
+
+        .publication-keywords {
+            margin-top: 10px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .keyword-tag {
+            background: #e8f4fd;
+            color: #1e3a8a;
+            padding: 4px 10px;
+            border-radius: 15px;
+            font-size: 0.8em;
+            font-weight: 500;
+            border: 1px solid #0ea5e9;
         }
 
             @media (max-width: 768px) {
@@ -197,55 +222,53 @@
                 <div class="profile-img">👨‍💻</div>
             </div>
             <div class="profile-info">
-                <h1>John Doe</h1>
-                <p style="font-size: 1.2em; color: #666; margin-bottom: 10px;">Computer Science Graduate Student | AI Researcher</p>
-                <p style="margin-bottom: 15px;">Hello! I'm a graduate student majoring in Computer Science with a passion for AI and Machine Learning.</p>
+                <h1>SangEun Park</h1>
+                <p style="font-size: 1.2em; color: #666; margin-bottom: 10px;">Ph.D Student in HASS Lab,EECS,DGIST</p>
+                <p style="margin-bottom: 15px;">Hello! I'm a Ph.D student majoring in Computer Science with a passion for Edge Computing.</p>
                 <div class="contact-info">
-                    <p><strong>📧 Email:</strong> john.doe@university.edu</p>
-                    <p><strong>📱 Phone:</strong> +82-10-1234-5678</p>
-                    <p><strong>📍 Location:</strong> Seoul, South Korea</p>
-                    <p><strong>🌐 GitHub:</strong> github.com/tkddms2087</p>
+                    <p><strong>📧 Email:</strong> tkddms2087@dgist.ac.kr</p>
+                    <p><strong>📍 Location:</strong> Daegu, South Korea</p>
+                    <p><strong>🎓 Google Scholar:</strong> <a href="https://scholar.google.com/citations?view_op=list_works&hl=ko&hl=ko&user=smaNgLkAAAAJ" target="_blank" style="color: #0ea5e9; text-decoration: none;">View Profile</a></p>
+                    <!-- <p><strong>💼 LinkedIn:</strong> <a href="https://linkedin.com/in/sangeun-park" target="_blank" style="color: #0ea5e9; text-decoration: none;">linkedin.com/in/sangeun-park</a></p>-->
+                    <p><strong>🌐 GitHub:</strong> <a href="https://github.com/tkddms2087" target="_blank" style="color: #0ea5e9; text-decoration: none;">github.com/tkddms2087</a></p>
                 </div>
             </div>
         </header>
 
         <!-- Education & Experience Section -->
         <section class="section">
-            <h2>🎓 Education & Experience</h2>
+            <h2>🎓 Education</h2>
             <div class="card">
-                <h3>Master's Degree in Computer Science (2024~Present)</h3>
-                <p><strong>University:</strong> XX University</p>
-                <p><strong>Lab:</strong> AI Research Lab</p>
-                <p><strong>Advisor:</strong> Prof. Kim</p>
-                <p><strong>Research Area:</strong> Natural Language Processing, Deep Learning</p>
+                <h3>Ph.D in Electrical Engineering & Computer Science</h3>
+                <p><strong>DGIST</strong> | 2025.2 ~ Current | GPA: 4.15/4.3</p>
+                <p>HASS Lab, Advisor: Prof. BaekGyu Kim</p>
             </div>
+            <div class="empty"></div>
             <div class="card">
-                <h3>Bachelor's Degree in Computer Science (2020~2024)</h3>
-                <p><strong>University:</strong> XX University</p>
-                <p><strong>GPA:</strong> 4.2/4.5</p>
-                <p><strong>Activities:</strong> Programming Club, Hackathon Participation</p>
+                <h3>B.S. in Computer Science</h3>
+                <p><strong>DGIST</strong> | 2021.2 ~ 2025.2 | GPA: 3.9/4.3</p>
             </div>
         </section>
-
+        
         <!-- Research Areas Section -->
         <section class="section">
             <h2>🔬 Research Areas</h2>
             <div class="research-item">
-                <h3>Natural Language Processing (NLP)</h3>
-                <p>Developing conversational AI systems, text sentiment analysis, and language model optimization research.</p>
+                <h3>Vehicle Edge Computing</h3>
+                <p>Research on optimizing computing resources in vehicular networks, focusing on different properties in diverse vehicular applications.</p>
             </div>
             <div class="research-item">
-                <h3>Machine Learning & Deep Learning</h3>
-                <p>Research on neural network architecture design, model compression, and transfer learning techniques.</p>
+                <h3>Real-Time scheduling in Edge Computing</h3>
+                <p>Research on how to guarantee task schedulability in dynamic vehicle scenarios.</p>
             </div>
-            <div class="research-item">
+            <!-- <div class="research-item">
                 <h3>Computer Vision</h3>
                 <p>Interested in image recognition, object detection, and image generation models research.</p>
-            </div>
+            </div> -->
         </section>
 
         <!-- Projects Section -->
-        <section class="section">
+        <!-- <section class="section">
             <h2>💻 Main Projects</h2>
             <div class="grid">
                 <div class="project-item">
@@ -267,10 +290,10 @@
                     <p><strong>Period:</strong> 2023.03 ~ 2023.06</p>
                 </div>
             </div>
-        </section>
+        </section> -->
 
         <!-- Technical Skills Section -->
-        <section class="section">
+        <!-- <section class="section">
             <h2>🛠️ Technical Skills</h2>
             <div class="grid">
                 <div class="card">
@@ -314,24 +337,51 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
 
         <!-- Publications & Presentations Section -->
         <section class="section">
-            <h2>📝 Publications & Presentations</h2>
+            <h2>📝 Publications</h2>
+            
             <div class="card">
-                <h3>Academic Activities</h3>
-                <ul>
-                    <li><strong>[Example]</strong> "Improving Text Sentiment Analysis Performance using Deep Learning" - Korea Computer Science Society Conference (2024)</li>
-                    <li><strong>[Example]</strong> "Development of Conversational AI System based on Natural Language Processing" - Graduate Student Research Presentation (2024)</li>
-                    <li><strong>[Example]</strong> "Recommendation System Optimization using Machine Learning Algorithms" - Undergraduate Thesis (2024)</li>
-                </ul>
-                <p><em>* Please replace with actual publications if available</em></p>
+                <h3>Conference</h3>
+                <p><strong>[Example]</strong> "TBD</em></p>
+                <div class="publication-keywords">
+                    <span class="keyword-tag">Edge Computing</span>
+                    <span class="keyword-tag">Vehicular Networks</span>
+                    <span class="keyword-tag">Resource Allocation</span>
+                    <span class="keyword-tag">Real-time Systems</span>
+                </div>
             </div>
+            <!-- <h3 style="color: #2c3e50; margin-bottom: 20px; font-size: 1.4em;">Conference</h3> -->
+            
+            <!-- <div class="publication-item">
+                <p><strong>[Example]</strong> "Improving Text Sentiment Analysis Performance using Deep Learning"</p>
+                <p><em>Korea Computer Science Society Conference (2024)</em></p>
+                <div class="publication-keywords">
+                    <span class="keyword-tag">Deep Learning</span>
+                    <span class="keyword-tag">NLP</span>
+                    <span class="keyword-tag">Sentiment Analysis</span>
+                    <span class="keyword-tag">Machine Learning</span>
+                </div>
+            </div> -->
+
+
+            <div class="card">
+            <h3>Journal</h3>
+            <p><strong>[Example]</strong> "TBD</em></p>
+                <div class="publication-keywords">
+                    <span class="keyword-tag">Edge Computing</span>
+                    <span class="keyword-tag">Vehicular Networks</span>
+                    <span class="keyword-tag">Resource Allocation</span>
+                    <span class="keyword-tag">Real-time Systems</span>
+                </div>
+            </div>
+
         </section>
 
         <!-- Contact Section -->
-        <section class="section">
+        <!-- <section class="section">
             <h2>📞 Contact</h2>
             <div class="contact-links">
                 <a href="mailto:your.email@example.com" class="contact-link">📧 Email</a>
@@ -339,7 +389,7 @@
                 <a href="https://linkedin.com/in/yourprofile" class="contact-link">💼 LinkedIn</a>
                 <a href="https://blog.yoursite.com" class="contact-link">📝 Blog</a>
             </div>
-        </section>
+        </section> -->
     </div>
 
     <script>
