@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>포트폴리오 - 컴퓨터공학 대학원생</title>
+    <title>Portfolio - Computer Science Graduate Student</title>
     <style>
         * {
             margin: 0;
@@ -30,16 +30,26 @@
             border-radius: 10px;
             padding: 40px;
             margin-bottom: 30px;
-            text-align: center;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
             border: 1px solid #e0e0e0;
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            text-align: left;
+        }
+
+        .profile-section {
+            flex-shrink: 0;
+        }
+
+        .profile-info {
+            flex: 1;
         }
 
         .profile-img {
             width: 150px;
             height: 150px;
             border-radius: 50%;
-            margin: 0 auto 20px;
             background: linear-gradient(45deg, #667eea, #764ba2);
             display: flex;
             align-items: center;
@@ -55,10 +65,17 @@
             color: #2c3e50;
         }
 
-        .subtitle {
-            font-size: 1.2em;
+        .contact-info {
+            margin-top: 15px;
+        }
+
+        .contact-info p {
+            margin: 5px 0;
             color: #666;
-            margin-bottom: 20px;
+        }
+
+        .contact-info strong {
+            color: #2c3e50;
         }
 
         .section {
@@ -145,13 +162,16 @@
             border-left: 4px solid #4caf50;
         }
 
-        @media (max-width: 768px) {
+            @media (max-width: 768px) {
             .container {
                 padding: 10px;
             }
             
             header {
                 padding: 30px 20px;
+                flex-direction: column;
+                text-align: center;
+                gap: 20px;
             }
             
             h1 {
@@ -171,78 +191,90 @@
 </head>
 <body>
     <div class="container">
-        <!-- 헤더 섹션 -->
+        <!-- Header Section -->
         <header>
-            <div class="profile-img">👨‍💻</div>
-            <h1>홍길동</h1>
-            <p class="subtitle">컴퓨터공학 대학원생 | 인공지능 연구자</p>
-            <p>안녕하세요! 컴퓨터공학을 전공하며 AI와 머신러닝 분야에 열정을 가진 대학원생입니다.</p>
+            <div class="profile-section">
+                <div class="profile-img">👨‍💻</div>
+            </div>
+            <div class="profile-info">
+                <h1>John Doe</h1>
+                <p style="font-size: 1.2em; color: #666; margin-bottom: 10px;">Computer Science Graduate Student | AI Researcher</p>
+                <p style="margin-bottom: 15px;">Hello! I'm a graduate student majoring in Computer Science with a passion for AI and Machine Learning.</p>
+                <div class="contact-info">
+                    <p><strong>📧 Email:</strong> john.doe@university.edu</p>
+                    <p><strong>📱 Phone:</strong> +82-10-1234-5678</p>
+                    <p><strong>📍 Location:</strong> Seoul, South Korea</p>
+                    <p><strong>🌐 GitHub:</strong> github.com/tkddms2087</p>
+                </div>
+            </div>
         </header>
 
-        <!-- 소개 섹션 -->
+        <!-- Education & Experience Section -->
         <section class="section">
-            <h2>🎓 학력 및 경력</h2>
+            <h2>🎓 Education & Experience</h2>
             <div class="card">
-                <h3>OO대학교 컴퓨터공학과 석사과정 (2024~현재)</h3>
-                <p><strong>연구실:</strong> AI Lab</p>
-                <p><strong>지도교수:</strong> 김교수님</p>
-                <p><strong>연구주제:</strong> 자연어처리, 딥러닝</p>
+                <h3>Master's Degree in Computer Science (2024~Present)</h3>
+                <p><strong>University:</strong> XX University</p>
+                <p><strong>Lab:</strong> AI Research Lab</p>
+                <p><strong>Advisor:</strong> Prof. Kim</p>
+                <p><strong>Research Area:</strong> Natural Language Processing, Deep Learning</p>
             </div>
             <div class="card">
-                <h3>OO대학교 컴퓨터공학과 학사 (2020~2024)</h3>
-                <p><strong>학점:</strong> 4.2/4.5</p>
-                <p><strong>관련활동:</strong> 프로그래밍 동아리, 해커톤 참가</p>
+                <h3>Bachelor's Degree in Computer Science (2020~2024)</h3>
+                <p><strong>University:</strong> XX University</p>
+                <p><strong>GPA:</strong> 4.2/4.5</p>
+                <p><strong>Activities:</strong> Programming Club, Hackathon Participation</p>
             </div>
         </section>
 
-        <!-- 연구 분야 섹션 -->
+        <!-- Research Areas Section -->
         <section class="section">
-            <h2>🔬 연구 분야</h2>
+            <h2>🔬 Research Areas</h2>
             <div class="research-item">
-                <h3>자연어처리 (NLP)</h3>
-                <p>대화형 AI 시스템 개발, 텍스트 감정 분석, 언어 모델 최적화에 관심을 가지고 연구하고 있습니다.</p>
+                <h3>Natural Language Processing (NLP)</h3>
+                <p>Developing conversational AI systems, text sentiment analysis, and language model optimization research.</p>
             </div>
             <div class="research-item">
-                <h3>머신러닝 & 딥러닝</h3>
-                <p>신경망 아키텍처 설계, 모델 경량화, 전이학습 기법 연구를 진행하고 있습니다.</p>
+                <h3>Machine Learning & Deep Learning</h3>
+                <p>Research on neural network architecture design, model compression, and transfer learning techniques.</p>
             </div>
             <div class="research-item">
-                <h3>컴퓨터 비전</h3>
-                <p>이미지 인식, 객체 탐지, 이미지 생성 모델에 대한 연구에 관심이 있습니다.</p>
+                <h3>Computer Vision</h3>
+                <p>Interested in image recognition, object detection, and image generation models research.</p>
             </div>
         </section>
 
-        <!-- 프로젝트 섹션 -->
+        <!-- Projects Section -->
         <section class="section">
-            <h2>💻 주요 프로젝트</h2>
+            <h2>💻 Main Projects</h2>
             <div class="grid">
                 <div class="project-item">
-                    <h3>🤖 챗봇 개발 프로젝트</h3>
-                    <p>자연어처리 기술을 활용한 고객 서비스 챗봇 개발</p>
-                    <p><strong>기술스택:</strong> Python, TensorFlow, Flask</p>
-                    <p><strong>기간:</strong> 2024.03 ~ 2024.06</p>
+                    <h3>🤖 Chatbot Development Project</h3>
+                    <p>Development of customer service chatbot using natural language processing technology</p>
+                    <p><strong>Tech Stack:</strong> Python, TensorFlow, Flask</p>
+                    <p><strong>Period:</strong> 2024.03 ~ 2024.06</p>
                 </div>
                 <div class="project-item">
-                    <h3>📊 데이터 분석 시스템</h3>
-                    <p>대용량 데이터 처리 및 시각화 웹 애플리케이션</p>
-                    <p><strong>기술스택:</strong> Python, Pandas, React, PostgreSQL</p>
-                    <p><strong>기간:</strong> 2023.09 ~ 2023.12</p>
+                    <h3>📊 Data Analysis System</h3>
+                    <p>Big data processing and visualization web application</p>
+                    <p><strong>Tech Stack:</strong> Python, Pandas, React, PostgreSQL</p>
+                    <p><strong>Period:</strong> 2023.09 ~ 2023.12</p>
                 </div>
                 <div class="project-item">
-                    <h3>🎯 추천 시스템</h3>
-                    <p>협업 필터링을 활용한 개인화 추천 알고리즘 구현</p>
-                    <p><strong>기술스택:</strong> Python, Scikit-learn, MongoDB</p>
-                    <p><strong>기간:</strong> 2023.03 ~ 2023.06</p>
+                    <h3>🎯 Recommendation System</h3>
+                    <p>Implementation of personalized recommendation algorithm using collaborative filtering</p>
+                    <p><strong>Tech Stack:</strong> Python, Scikit-learn, MongoDB</p>
+                    <p><strong>Period:</strong> 2023.03 ~ 2023.06</p>
                 </div>
             </div>
         </section>
 
-        <!-- 기술 스택 섹션 -->
+        <!-- Technical Skills Section -->
         <section class="section">
-            <h2>🛠️ 기술 스택</h2>
+            <h2>🛠️ Technical Skills</h2>
             <div class="grid">
                 <div class="card">
-                    <h3>프로그래밍 언어</h3>
+                    <h3>Programming Languages</h3>
                     <div class="tech-stack">
                         <span class="tech-tag">Python</span>
                         <span class="tech-tag">Java</span>
@@ -252,7 +284,7 @@
                     </div>
                 </div>
                 <div class="card">
-                    <h3>AI/ML 프레임워크</h3>
+                    <h3>AI/ML Frameworks</h3>
                     <div class="tech-stack">
                         <span class="tech-tag">TensorFlow</span>
                         <span class="tech-tag">PyTorch</span>
@@ -262,7 +294,7 @@
                     </div>
                 </div>
                 <div class="card">
-                    <h3>웹 개발</h3>
+                    <h3>Web Development</h3>
                     <div class="tech-stack">
                         <span class="tech-tag">React</span>
                         <span class="tech-tag">Node.js</span>
@@ -272,7 +304,7 @@
                     </div>
                 </div>
                 <div class="card">
-                    <h3>도구 & 기타</h3>
+                    <h3>Tools & Others</h3>
                     <div class="tech-stack">
                         <span class="tech-tag">Git</span>
                         <span class="tech-tag">Docker</span>
@@ -284,34 +316,34 @@
             </div>
         </section>
 
-        <!-- 논문 및 발표 섹션 -->
+        <!-- Publications & Presentations Section -->
         <section class="section">
-            <h2>📝 논문 및 발표</h2>
+            <h2>📝 Publications & Presentations</h2>
             <div class="card">
-                <h3>학술 활동</h3>
+                <h3>Academic Activities</h3>
                 <ul>
-                    <li><strong>[예시]</strong> "딥러닝을 활용한 텍스트 감정 분석 성능 향상 연구" - 한국정보과학회 학술대회 (2024)</li>
-                    <li><strong>[예시]</strong> "자연어처리 기반 대화형 AI 시스템 개발" - 대학원생 연구발표회 (2024)</li>
-                    <li><strong>[예시]</strong> "머신러닝 알고리즘을 활용한 추천 시스템 최적화" - 학부 졸업논문 (2024)</li>
+                    <li><strong>[Example]</strong> "Improving Text Sentiment Analysis Performance using Deep Learning" - Korea Computer Science Society Conference (2024)</li>
+                    <li><strong>[Example]</strong> "Development of Conversational AI System based on Natural Language Processing" - Graduate Student Research Presentation (2024)</li>
+                    <li><strong>[Example]</strong> "Recommendation System Optimization using Machine Learning Algorithms" - Undergraduate Thesis (2024)</li>
                 </ul>
-                <p><em>* 실제 논문이 있으시면 위 예시를 대체해주세요</em></p>
+                <p><em>* Please replace with actual publications if available</em></p>
             </div>
         </section>
 
-        <!-- 연락처 섹션 -->
+        <!-- Contact Section -->
         <section class="section">
-            <h2>📞 연락처</h2>
+            <h2>📞 Contact</h2>
             <div class="contact-links">
-                <a href="mailto:your.email@example.com" class="contact-link">📧 이메일</a>
+                <a href="mailto:your.email@example.com" class="contact-link">📧 Email</a>
                 <a href="https://github.com/tkddms2087" class="contact-link">💻 GitHub</a>
                 <a href="https://linkedin.com/in/yourprofile" class="contact-link">💼 LinkedIn</a>
-                <a href="https://blog.yoursite.com" class="contact-link">📝 블로그</a>
+                <a href="https://blog.yoursite.com" class="contact-link">📝 Blog</a>
             </div>
         </section>
     </div>
 
     <script>
-        // 간단한 페이드인 효과
+        // Simple fade-in effect
         document.addEventListener('DOMContentLoaded', () => {
             const sections = document.querySelectorAll('.section, header');
             sections.forEach((section, index) => {
