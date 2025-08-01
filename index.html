@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>포트폴리오 - 컴퓨터공학 대학원생</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 40px;
+            margin-bottom: 30px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin: 0 auto 20px;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 60px;
+            color: white;
+            font-weight: bold;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            color: #2c3e50;
+        }
+
+        .subtitle {
+            font-size: 1.2em;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .section {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .section h2 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+            font-size: 1.8em;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 10px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .card {
+            background: #f8f9fa;
+            border-radius: 15px;
+            padding: 25px;
+            border-left: 5px solid #667eea;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+        }
+
+        .card h3 {
+            color: #2c3e50;
+            margin-bottom: 15px;
+            font-size: 1.3em;
+        }
+
+        .tech-stack {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 15px;
+        }
+
+        .tech-tag {
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            color: white;
+            padding: 8px 16px;
+            border-radius: 25px;
+            font-size: 0.9em;
+            font-weight: 500;
+        }
+
+        .contact-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .contact-link {
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            color: white;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 25px;
+            transition: transform 0.3s ease;
+            font-weight: 500;
+        }
+
+        .contact-link:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .research-item {
+            background: #e3f2fd;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 15px;
+            border-left: 4px solid #2196f3;
+        }
+
+        .project-item {
+            background: #f1f8e9;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 15px;
+            border-left: 4px solid #4caf50;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+            
+            header {
+                padding: 30px 20px;
+            }
+            
+            h1 {
+                font-size: 2em;
+            }
+            
+            .section {
+                padding: 20px;
+            }
+            
+            .contact-links {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- 헤더 섹션 -->
+        <header>
+            <div class="profile-img">👨‍💻</div>
+            <h1>홍길동</h1>
+            <p class="subtitle">컴퓨터공학 대학원생 | 인공지능 연구자</p>
+            <p>안녕하세요! 컴퓨터공학을 전공하며 AI와 머신러닝 분야에 열정을 가진 대학원생입니다.</p>
+        </header>
+
+        <!-- 소개 섹션 -->
+        <section class="section">
+            <h2>🎓 학력 및 경력</h2>
+            <div class="card">
+                <h3>OO대학교 컴퓨터공학과 석사과정 (2024~현재)</h3>
+                <p><strong>연구실:</strong> AI Lab</p>
+                <p><strong>지도교수:</strong> 김교수님</p>
+                <p><strong>연구주제:</strong> 자연어처리, 딥러닝</p>
+            </div>
+            <div class="card">
+                <h3>OO대학교 컴퓨터공학과 학사 (2020~2024)</h3>
+                <p><strong>학점:</strong> 4.2/4.5</p>
+                <p><strong>관련활동:</strong> 프로그래밍 동아리, 해커톤 참가</p>
+            </div>
+        </section>
+
+        <!-- 연구 분야 섹션 -->
+        <section class="section">
+            <h2>🔬 연구 분야</h2>
+            <div class="research-item">
+                <h3>자연어처리 (NLP)</h3>
+                <p>대화형 AI 시스템 개발, 텍스트 감정 분석, 언어 모델 최적화에 관심을 가지고 연구하고 있습니다.</p>
+            </div>
+            <div class="research-item">
+                <h3>머신러닝 & 딥러닝</h3>
+                <p>신경망 아키텍처 설계, 모델 경량화, 전이학습 기법 연구를 진행하고 있습니다.</p>
+            </div>
+            <div class="research-item">
+                <h3>컴퓨터 비전</h3>
+                <p>이미지 인식, 객체 탐지, 이미지 생성 모델에 대한 연구에 관심이 있습니다.</p>
+            </div>
+        </section>
+
+        <!-- 프로젝트 섹션 -->
+        <section class="section">
+            <h2>💻 주요 프로젝트</h2>
+            <div class="grid">
+                <div class="project-item">
+                    <h3>🤖 챗봇 개발 프로젝트</h3>
+                    <p>자연어처리 기술을 활용한 고객 서비스 챗봇 개발</p>
+                    <p><strong>기술스택:</strong> Python, TensorFlow, Flask</p>
+                    <p><strong>기간:</strong> 2024.03 ~ 2024.06</p>
+                </div>
+                <div class="project-item">
+                    <h3>📊 데이터 분석 시스템</h3>
+                    <p>대용량 데이터 처리 및 시각화 웹 애플리케이션</p>
+                    <p><strong>기술스택:</strong> Python, Pandas, React, PostgreSQL</p>
+                    <p><strong>기간:</strong> 2023.09 ~ 2023.12</p>
+                </div>
+                <div class="project-item">
+                    <h3>🎯 추천 시스템</h3>
+                    <p>협업 필터링을 활용한 개인화 추천 알고리즘 구현</p>
+                    <p><strong>기술스택:</strong> Python, Scikit-learn, MongoDB</p>
+                    <p><strong>기간:</strong> 2023.03 ~ 2023.06</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 기술 스택 섹션 -->
+        <section class="section">
+            <h2>🛠️ 기술 스택</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>프로그래밍 언어</h3>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Java</span>
+                        <span class="tech-tag">C++</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">SQL</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <h3>AI/ML 프레임워크</h3>
+                    <div class="tech-stack">
+                        <span class="tech-tag">TensorFlow</span>
+                        <span class="tech-tag">PyTorch</span>
+                        <span class="tech-tag">Scikit-learn</span>
+                        <span class="tech-tag">Pandas</span>
+                        <span class="tech-tag">NumPy</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <h3>웹 개발</h3>
+                    <div class="tech-stack">
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">Flask</span>
+                        <span class="tech-tag">Django</span>
+                        <span class="tech-tag">HTML/CSS</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <h3>도구 & 기타</h3>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Git</span>
+                        <span class="tech-tag">Docker</span>
+                        <span class="tech-tag">AWS</span>
+                        <span class="tech-tag">Linux</span>
+                        <span class="tech-tag">Jupyter</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 논문 및 발표 섹션 -->
+        <section class="section">
+            <h2>📝 논문 및 발표</h2>
+            <div class="card">
+                <h3>학술 활동</h3>
+                <ul>
+                    <li><strong>[예시]</strong> "딥러닝을 활용한 텍스트 감정 분석 성능 향상 연구" - 한국정보과학회 학술대회 (2024)</li>
+                    <li><strong>[예시]</strong> "자연어처리 기반 대화형 AI 시스템 개발" - 대학원생 연구발표회 (2024)</li>
+                    <li><strong>[예시]</strong> "머신러닝 알고리즘을 활용한 추천 시스템 최적화" - 학부 졸업논문 (2024)</li>
+                </ul>
+                <p><em>* 실제 논문이 있으시면 위 예시를 대체해주세요</em></p>
+            </div>
+        </section>
+
+        <!-- 연락처 섹션 -->
+        <section class="section">
+            <h2>📞 연락처</h2>
+            <div class="contact-links">
+                <a href="mailto:your.email@example.com" class="contact-link">📧 이메일</a>
+                <a href="https://github.com/tkddms2087" class="contact-link">💻 GitHub</a>
+                <a href="https://linkedin.com/in/yourprofile" class="contact-link">💼 LinkedIn</a>
+                <a href="https://blog.yoursite.com" class="contact-link">📝 블로그</a>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        // 스크롤 애니메이션
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // 모든 섹션에 애니메이션 적용
+        document.addEventListener('DOMContentLoaded', () => {
+            const sections = document.querySelectorAll('.section');
+            sections.forEach(section => {
+                section.style.opacity = '0';
+                section.style.transform = 'translateY(20px)';
+                section.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+                observer.observe(section);
+            });
+        });
+    </script>
+</body>
+</html>
