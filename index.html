@@ -1,409 +1,138 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hompage - Sangeun Park</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background: #f5f5f5;
-            min-height: 100vh;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-
-        header {
-            background: white;
-            border-radius: 10px;
-            padding: 40px;
-            margin-bottom: 30px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            border: 1px solid #e0e0e0;
-            display: flex;
-            align-items: center;
-            gap: 40px;
-            text-align: left;
-        }
-
-        .profile-section {
-            flex-shrink: 0;
-        }
-
-        .profile-info {
-            flex: 1;
-        }
-
-        .profile-img {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            background: linear-gradient(45deg, #1e3a8a, #0ea5e9);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 60px;
-            color: white;
-            font-weight: bold;
-        }
-
-        h1 {
-            font-size: 2.5em;
-            margin-bottom: 10px;
-            color: #2c3e50;
-        }
-
-        .contact-info {
-            margin-top: 15px;
-        }
-
-        .contact-info p {
-            margin: 5px 0;
-            color: #666;
-        }
-
-        .contact-info strong {
-            color: #2c3e50;
-        }
-
-        .section {
-            background: white;
-            border-radius: 10px;
-            padding: 30px;
-            margin-bottom: 30px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            border: 1px solid #e0e0e0;
-        }
-
-        .section h2 {
-            color: #2c3e50;
-            margin-bottom: 20px;
-            font-size: 1.8em;
-            border-bottom: 3px solid #0ea5e9;
-            padding-bottom: 10px;
-        }
-
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-        }
-
-        .card {
-            /* background: #f8f9fa; */
-            /* border-radius: 5px; */
-            padding: 15px;
-            border-left: 4px solid #0ea5e9;
-            margin-bottom: 15px;
-        }
-
-        .card h3 {
-            margin-top: -8px;
-            color: #2c3e50;
-            margin-bottom: 6px;
-            font-size: 1.3em;
-        }
-
-        .tech-stack {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-            margin-top: 15px;
-        }
-
-        .tech-tag {
-            background: linear-gradient(45deg, #1e3a8a, #0ea5e9);
-            color: white;
-            padding: 8px 16px;
-            border-radius: 25px;
-            font-size: 0.9em;
-            font-weight: 500;
-        }
-
-        .contact-links {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            flex-wrap: wrap;
-        }
-
-        .contact-link {
-            background: linear-gradient(45deg, #1e3a8a, #0ea5e9);
-            color: white;
-            padding: 12px 24px;
-            text-decoration: none;
-            border-radius: 25px;
-            font-weight: 500;
-        }
-
-        .research-item {
-            /* background: #e3f2fd; */
-            /* border-radius: 10px; */
-            padding: 15px;
-            margin-bottom: 15px;
-            border-left: 4px solid #0ea5e9;
-        }
-        .research-item h3 {
-            margin-top: -8px;
-            color: #2c3e50;
-            margin-bottom: 5px;
-            font-size: 1.5em;
-        }
-
-        .publication-item {
-            margin-bottom: 20px;
-            padding: 15px;
-            background: #f9f9f9;
-            border-radius: 8px;
-            border-left: 4px solid #0ea5e9;
-        }
-
-        .publication-keywords {
-            margin-top: 10px;
-            display: flex;
-            flex-wrap: wrap;
-            gap: 8px;
-        }
-
-        .keyword-tag {
-            background: #e8f4fd;
-            color: #1e3a8a;
-            padding: 4px 10px;
-            border-radius: 15px;
-            font-size: 0.8em;
-            font-weight: 500;
-            border: 1px solid #0ea5e9;
-        }
-
-            @media (max-width: 768px) {
-            .container {
-                padding: 10px;
-            }
-            
-            header {
-                padding: 30px 20px;
-                flex-direction: column;
-                text-align: center;
-                gap: 20px;
-            }
-            
-            h1 {
-                font-size: 2em;
-            }
-            
-            .section {
-                padding: 20px;
-            }
-            
-            .contact-links {
-                flex-direction: column;
-                align-items: center;
-            }
-        }
-    </style>
+    <title>SangEun Park - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="container">
-        <!-- Header Section -->
+        <!-- Header / Hero Section -->
         <header>
-            <div class="profile-section">
-                <div class="profile-img">👨‍💻</div>
-            </div>
-            <div class="profile-info">
-                <h1>SangEun Park</h1>
-                <p style="font-size: 1.2em; color: #666; margin-bottom: 10px;">Ph.D Student in <a href="https://sites.google.com/view/hass-dgist/hass-lab" target="_blank" style="color: #0ea5e9; text-decoration: none;">HASS Lab</a>,EECS,DGIST</p>
-                <p style="margin-bottom: 15px;">Hello! I'm a Ph.D student majoring in Computer Science with a passion for Edge Computing.</p>
-                <div class="contact-info">
-                    <p><strong>📧 Email:</strong> tkddms2087@dgist.ac.kr</p>
-                    <p><strong>📍 Location:</strong> Daegu, South Korea</p>
-                    <p><strong>🎓 Google Scholar:</strong> <a href="https://scholar.google.com/citations?view_op=list_works&hl=ko&hl=ko&user=smaNgLkAAAAJ" target="_blank" style="color: #0ea5e9; text-decoration: none;">View Profile</a></p>
-                    <!-- <p><strong>💼 LinkedIn:</strong> <a href="https://linkedin.com/in/sangeun-park" target="_blank" style="color: #0ea5e9; text-decoration: none;">linkedin.com/in/sangeun-park</a></p>-->
-                    <p><strong>🌐 GitHub:</strong> <a href="https://github.com/tkddms2087" target="_blank" style="color: #0ea5e9; text-decoration: none;">github.com/tkddms2087</a></p>
+            <div class="hero-content">
+                <div class="hero-text">
+                    <button id="theme-toggle" aria-label="Toggle Dark Mode" class="theme-toggle">
+                        🌙
+                    </button>
+                    <p class="role">Ph.D Student in HASS Lab, DGIST</p>
+                    <h1>SangEun Park</h1>
+                    <p class="tagline">
+                        Hello! I'm a Ph.D student majoring in Computer Science with a passion for Edge Computing.
+                        My research focuses on optimizing vehicular networks and real-time scheduling.
+                    </p>
+
+                    <div class="social-links">
+                        <a href="mailto:tkddms2087@dgist.ac.kr" class="social-btn">
+                            <span>📧</span> Email
+                        </a>
+                        <a href="https://github.com/tkddms2087" target="_blank" class="social-btn">
+                            <span>💻</span> GitHub
+                        </a>
+                        <a href="https://scholar.google.com/citations?view_op=list_works&hl=ko&hl=ko&user=smaNgLkAAAAJ"
+                            target="_blank" class="social-btn">
+                            <span>🎓</span> Scholar
+                        </a>
+                    </div>
+                </div>
+
+                <div class="hero-image-wrapper">
+                    <div class="profile-img-card">
+                        👨‍💻
+                    </div>
                 </div>
             </div>
         </header>
 
-        <!-- Education & Experience Section -->
-        <section class="section">
-            <h2>🎓 Education</h2>
-            <div class="card">
-                <h3>Ph.D in Electrical Engineering & Computer Science</h3>
-                <p><strong>DGIST</strong> | 2025.2 ~ Current | GPA: 4.15/4.3</p>
-                <p>HASS Lab, Advisor: Prof. BaekGyu Kim</p>
-            </div>
-            <div class="empty"></div>
-            <div class="card">
-                <h3>B.S. in Computer Science</h3>
-                <p><strong>DGIST</strong> | 2021.2 ~ 2025.2 | GPA: 3.9/4.3</p>
+        <!-- Education Section -->
+        <section id="education" class="reveal">
+            <h2>Education</h2>
+            <div class="grid">
+                <div class="card">
+                    <span class="card-meta">2025.2 - Present</span>
+                    <h3>Ph.D in EE & Computer Science</h3>
+                    <p style="margin-bottom: 0.5rem; color: var(--text-secondary);">DGIST</p>
+                    <p>HASS Lab</p>
+                    <p class="tag-container" style="color: var(--text-secondary); margin-top: 5px;">Advisor: Prof.
+                        BaekGyu Kim</p>
+                </div>
+                <div class="card">
+                    <span class="card-meta">2021.2 - 2025.2</span>
+                    <h3>B.S. in Computer Science</h3>
+                    <p style="margin-bottom: 0.5rem; color: var(--text-secondary);">DGIST</p>
+                    <p>GPA: 3.9/4.3</p>
+                </div>
             </div>
         </section>
-        
+
         <!-- Research Areas Section -->
-        <section class="section">
-            <h2>🔬 Research Areas</h2>
-            <div class="research-item">
-                <h3>Vehicle Edge Computing</h3>
-                <p>Research on optimizing computing resources in vehicular networks, focusing on different properties in diverse vehicular applications.</p>
+        <section id="research" class="reveal">
+            <h2>Research Areas</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>Vehicle Edge Computing</h3>
+                    <p style="color: var(--text-secondary); margin-bottom: 1rem;">
+                        Optimizing computing resources in vehicular networks, focusing on different properties in
+                        diverse vehicular applications.
+                    </p>
+                    <div class="tag-container">
+                        <span class="tag">Edge Computing</span>
+                        <span class="tag">Vehicular Networks</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <h3>Real-Time Scheduling</h3>
+                    <p style="color: var(--text-secondary); margin-bottom: 1rem;">
+                        Guaranteeing task schedulability in dynamic vehicle scenarios through advanced scheduling
+                        algorithms.
+                    </p>
+                    <div class="tag-container">
+                        <span class="tag">Real-time Systems</span>
+                        <span class="tag">Scheduling</span>
+                    </div>
+                </div>
             </div>
-            <div class="research-item">
-                <h3>Real-Time scheduling in Edge Computing</h3>
-                <p>Research on how to guarantee task schedulability in dynamic vehicle scenarios.</p>
-            </div>
-            <!-- <div class="research-item">
-                <h3>Computer Vision</h3>
-                <p>Interested in image recognition, object detection, and image generation models research.</p>
-            </div> -->
         </section>
 
-        <!-- Projects Section -->
-        <!-- <section class="section">
-            <h2>💻 Main Projects</h2>
-            <div class="grid">
-                <div class="project-item">
-                    <h3>🤖 Chatbot Development Project</h3>
-                    <p>Development of customer service chatbot using natural language processing technology</p>
-                    <p><strong>Tech Stack:</strong> Python, TensorFlow, Flask</p>
-                    <p><strong>Period:</strong> 2024.03 ~ 2024.06</p>
-                </div>
-                <div class="project-item">
-                    <h3>📊 Data Analysis System</h3>
-                    <p>Big data processing and visualization web application</p>
-                    <p><strong>Tech Stack:</strong> Python, Pandas, React, PostgreSQL</p>
-                    <p><strong>Period:</strong> 2023.09 ~ 2023.12</p>
-                </div>
-                <div class="project-item">
-                    <h3>🎯 Recommendation System</h3>
-                    <p>Implementation of personalized recommendation algorithm using collaborative filtering</p>
-                    <p><strong>Tech Stack:</strong> Python, Scikit-learn, MongoDB</p>
-                    <p><strong>Period:</strong> 2023.03 ~ 2023.06</p>
-                </div>
-            </div>
-        </section> -->
-
-        <!-- Technical Skills Section -->
-        <!-- <section class="section">
-            <h2>🛠️ Technical Skills</h2>
-            <div class="grid">
-                <div class="card">
-                    <h3>Programming Languages</h3>
-                    <div class="tech-stack">
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">Java</span>
-                        <span class="tech-tag">C++</span>
-                        <span class="tech-tag">JavaScript</span>
-                        <span class="tech-tag">SQL</span>
-                    </div>
-                </div>
-                <div class="card">
-                    <h3>AI/ML Frameworks</h3>
-                    <div class="tech-stack">
-                        <span class="tech-tag">TensorFlow</span>
-                        <span class="tech-tag">PyTorch</span>
-                        <span class="tech-tag">Scikit-learn</span>
-                        <span class="tech-tag">Pandas</span>
-                        <span class="tech-tag">NumPy</span>
-                    </div>
-                </div>
-                <div class="card">
-                    <h3>Web Development</h3>
-                    <div class="tech-stack">
-                        <span class="tech-tag">React</span>
-                        <span class="tech-tag">Node.js</span>
-                        <span class="tech-tag">Flask</span>
-                        <span class="tech-tag">Django</span>
-                        <span class="tech-tag">HTML/CSS</span>
-                    </div>
-                </div>
-                <div class="card">
-                    <h3>Tools & Others</h3>
-                    <div class="tech-stack">
-                        <span class="tech-tag">Git</span>
-                        <span class="tech-tag">Docker</span>
-                        <span class="tech-tag">AWS</span>
-                        <span class="tech-tag">Linux</span>
-                        <span class="tech-tag">Jupyter</span>
-                    </div>
-                </div>
-            </div>
-        </section> -->
-
-        <!-- Publications & Presentations Section -->
-        <section class="section">
-            <h2>📝 Publications</h2>
-            
+        <!-- Publications Section -->
+        <section id="publications" class="reveal">
+            <h2>Publications</h2>
             <div class="card">
                 <h3>Conference</h3>
-                <p><strong>[Example]</strong> "TBD</em></p>
-                <div class="publication-keywords">
-                    <span class="keyword-tag">Edge Computing</span>
-                    <span class="keyword-tag">Vehicular Networks</span>
-                    <span class="keyword-tag">Resource Allocation</span>
-                    <span class="keyword-tag">Real-time Systems</span>
+                <div class="pub-item">
+                    <h4 style="margin-bottom: 0.5rem;">[Example] "TBD"</h4>
+                    <div class="tag-container">
+                        <span class="tag">Edge Computing</span>
+                        <span class="tag">Vehicular Networks</span>
+                    </div>
                 </div>
-            </div>
-            <!-- <h3 style="color: #2c3e50; margin-bottom: 20px; font-size: 1.4em;">Conference</h3> -->
-            
-            <!-- <div class="publication-item">
-                <p><strong>[Example]</strong> "Improving Text Sentiment Analysis Performance using Deep Learning"</p>
-                <p><em>Korea Computer Science Society Conference (2024)</em></p>
-                <div class="publication-keywords">
-                    <span class="keyword-tag">Deep Learning</span>
-                    <span class="keyword-tag">NLP</span>
-                    <span class="keyword-tag">Sentiment Analysis</span>
-                    <span class="keyword-tag">Machine Learning</span>
-                </div>
-            </div> -->
-
-
-            <div class="card">
-            <h3>Journal</h3>
-            <p><strong>[Example]</strong> "TBD</em></p>
-                <div class="publication-keywords">
-                    <span class="keyword-tag">Edge Computing</span>
-                    <span class="keyword-tag">Vehicular Networks</span>
-                    <span class="keyword-tag">Resource Allocation</span>
-                    <span class="keyword-tag">Real-time Systems</span>
-                </div>
+                <!-- Add more conference papers here -->
             </div>
 
+            <div class="card" style="margin-top: 2rem;">
+                <h3>Journal</h3>
+                <div class="pub-item">
+                    <h4 style="margin-bottom: 0.5rem;">[Example] "TBD"</h4>
+                    <div class="tag-container">
+                        <span class="tag">Resource Allocation</span>
+                        <span class="tag">Real-time Systems</span>
+                    </div>
+                </div>
+                <!-- Add more journal papers here -->
+            </div>
         </section>
 
-        <!-- Contact Section -->
-        <!-- <section class="section">
-            <h2>📞 Contact</h2>
-            <div class="contact-links">
-                <a href="mailto:your.email@example.com" class="contact-link">📧 Email</a>
-                <a href="https://github.com/tkddms2087" class="contact-link">💻 GitHub</a>
-                <a href="https://linkedin.com/in/yourprofile" class="contact-link">💼 LinkedIn</a>
-                <a href="https://blog.yoursite.com" class="contact-link">📝 Blog</a>
-            </div>
-        </section> -->
     </div>
 
-    <script>
-        // Simple fade-in effect
-        document.addEventListener('DOMContentLoaded', () => {
-            const sections = document.querySelectorAll('.section, header');
-            sections.forEach((section, index) => {
-                section.style.opacity = '0';
-                setTimeout(() => {
-                    section.style.opacity = '1';
-                    section.style.transition = 'opacity 0.5s ease';
-                }, index * 100);
-            });
-        });
-    </script>
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 SangEun Park. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
+
 </html>
