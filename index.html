@@ -4,230 +4,317 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SangEun Park - Portfolio</title>
+
+    <title>SangEun Park</title>
+
     <link rel="stylesheet" href="style.css">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SangEun Park</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
 </head>
 
 <body>
+
     <div class="container">
-        <!-- Header / Hero Section -->
+
+        <!-- =========================
+             Hero / Profile
+        ========================== -->
         <header>
             <div class="hero-content">
-                <div class="hero-text">
-                    <button id="theme-toggle" aria-label="Toggle Dark Mode" class="theme-toggle">
-                        🌙
-                    </button>
 
-                    <p class="role">
-                        Ph.D Student in
-                        <a href="https://sites.google.com/view/hass-dgist/hass-lab" target="_blank">
-                            HASS Lab, DGIST
-                        </a>
-                    </p>
+                <!-- Profile Image -->
+                <div class="hero-image-wrapper">
+                    <div class="profile-img-card">
+                        <img src="images/park.png" alt="SangEun Park">
+                    </div>
+                </div>
+
+                <!-- Profile Information -->
+                <div class="hero-text">
 
                     <h1>SangEun Park</h1>
 
+                    <p class="role">
+                        Ph.D. Student in Electrical Engineering and Computer Science
+                    </p>
+
+                    <p class="role">
+                        <a
+                            href="https://sites.google.com/view/hass-dgist/hass-lab"
+                            target="_blank">
+                            HASS Lab
+                        </a>,
+                        DGIST
+                    </p>
+
                     <p class="tagline">
-                        Hello! I'm a Ph.D student majoring in Computer Science with a passion for Edge Computing.
-                        My research focuses on vehicular edge computing, real-time scheduling, and formal verification.
+                        I am a Ph.D. student at DGIST, advised by Prof. BaekGyu Kim.
+                        My research interests include vehicular edge computing,
+                        real-time systems and scheduling, and formal verification.
                     </p>
 
                     <div class="social-links">
-                        <a href="mailto:tkddms2087@dgist.ac.kr" class="social-btn">
-                            <span>📧</span> Email
+
+                        <!-- Email -->
+                        <a href="mailto:tkddms2087@dgist.ac.kr"
+                        class="social-icon"
+                        aria-label="Email"
+                        title="Email">
+                            <i class="fa-solid fa-envelope"></i>
                         </a>
 
-                        <a href="https://github.com/tkddms2087" target="_blank" class="social-btn">
-                            <span>💻</span> GitHub
+                        <!-- GitHub -->
+                        <a href="https://github.com/tkddms2087"
+                        target="_blank"
+                        class="social-icon"
+                        aria-label="GitHub"
+                        title="GitHub">
+                            <i class="fa-brands fa-github"></i>
                         </a>
 
+                        <!-- Google Scholar -->
                         <a href="https://scholar.google.com/citations?view_op=list_works&hl=ko&user=smaNgLkAAAAJ"
-                           target="_blank" class="social-btn">
-                            <span>🎓</span> Scholar
+                        target="_blank"
+                        class="social-icon"
+                        aria-label="Google Scholar"
+                        title="Google Scholar">
+
+                            <img width="96"
+                                height="96"
+                                src="https://img.icons8.com/material-outlined/96/google-scholar.png"
+                                alt="Google Scholar">
                         </a>
+
                     </div>
+
                 </div>
 
-                <div class="hero-image-wrapper">
-                    <div class="profile-img-card">
-                        👨‍💻
-                    </div>
-                </div>
             </div>
         </header>
 
 
-        <!-- Education Section -->
+        <!-- =========================
+             Research Interests
+        ========================== -->
+        <section id="research" class="reveal">
+
+            <h2>Research Interests</h2>
+
+            <p class="research-interests">
+                Vehicular Edge Computing
+                &nbsp;·&nbsp;
+                Real-Time Systems and Scheduling
+                &nbsp;·&nbsp;
+                Formal Verification
+                &nbsp;·&nbsp;
+                Task Offloading
+            </p>
+
+        </section>
+
+
+        <!-- =========================
+             News
+        ========================== -->
+        <!-- <section id="news" class="reveal">
+
+            <h2>News</h2>
+
+            <ul class="news-list">
+
+                <li>
+                    <span class="news-date">Aug. 2026</span>
+                    Our paper
+                    <strong>
+                        “Task-Adaptive Offloading Strategy in Vehicular Edge Computing”
+                    </strong>
+                    was accepted to
+                    <em>IEEE Internet of Things Journal</em>.
+                </li>
+
+                <li>
+                    <span class="news-date">Sep. 2026</span>
+                    Our paper
+                    <strong>
+                        “Optimizing Dependent Task Offloading with Hop Constraints
+                        in Vehicular Edge Computing”
+                    </strong>
+                    will appear at
+                    <em>IEEE VTC 2026-Fall</em>.
+                </li>
+
+            </ul>
+
+        </section> -->
+
+
+        <!-- =========================
+             Education
+        ========================== -->
         <section id="education" class="reveal">
+
             <h2>Education</h2>
 
-            <div class="grid">
-                <div class="card">
-                    <span class="card-meta">2025.2 - Present</span>
-                    <h3>Ph.D. in EE & Computer Science</h3>
-                    <p style="margin-bottom: 0.5rem; color: var(--text-secondary);">
-                        DGIST
-                    </p>
-                    <p>HASS Lab</p>
-                    <p class="tag-container"
-                       style="color: var(--text-secondary); margin-top: 5px;">
-                        Advisor: Prof. BaekGyu Kim
-                    </p>
+            <div class="education-item">
+
+                <div class="education-date">
+                    2025 – Present
                 </div>
 
-                <div class="card">
-                    <span class="card-meta">2021.2 - 2025.2</span>
-                    <h3>B.E. in Computer Science and Engineering</h3>
-                    <p style="margin-bottom: 0.5rem; color: var(--text-secondary);">
-                        DGIST
-                    </p>
-                    <p>GPA: 3.9/4.3</p>
-                </div>
-            </div>
-        </section>
+                <div class="education-content">
+                    <strong>
+                        Ph.D. in Electrical Engineering and Computer Science
+                    </strong>
 
+                    <br>
 
-        <!-- Research Areas Section -->
-        <section id="research" class="reveal">
-            <h2>Research Areas</h2>
+                    Daegu Gyeongbuk Institute of Science and Technology (DGIST)
 
-            <div class="grid">
+                    <br>
 
-                <div class="card">
-                    <h3>Vehicular Edge Computing</h3>
-
-                    <p style="color: var(--text-secondary); margin-bottom: 1rem;">
-                        Optimizing computing and communication resources in vehicular networks
-                        under dynamic mobility and workload conditions.
-                    </p>
-
-                    <div class="tag-container">
-                        <span class="tag">Edge Computing</span>
-                        <span class="tag">Vehicular Networks</span>
-                        <span class="tag">Task Offloading</span>
-                    </div>
-                </div>
-
-
-                <div class="card">
-                    <h3>Real-Time Scheduling</h3>
-
-                    <p style="color: var(--text-secondary); margin-bottom: 1rem;">
-                        Guaranteeing task schedulability and deadline satisfaction in dynamic
-                        computing environments through real-time scheduling techniques.
-                    </p>
-
-                    <div class="tag-container">
-                        <span class="tag">Real-Time Systems</span>
-                        <span class="tag">Scheduling</span>
-                    </div>
-                </div>
-
-
-                <div class="card">
-                    <h3>Formal Verification</h3>
-
-                    <p style="color: var(--text-secondary); margin-bottom: 1rem;">
-                        Developing formal methods to verify the feasibility and correctness
-                        of computation and communication decisions in dynamic systems.
-                    </p>
-
-                    <div class="tag-container">
-                        <span class="tag">Formal Verification</span>
-                        <span class="tag">SMT</span>
-                        <span class="tag">Cyber-Physical Systems</span>
-                    </div>
+                    <span class="education-sub">
+                        HASS Lab · Advisor: Prof. BaekGyu Kim
+                    </span>
                 </div>
 
             </div>
+
+
+            <div class="education-item">
+
+                <div class="education-date">
+                    2021 – 2025
+                </div>
+
+                <div class="education-content">
+                    <strong>
+                        B.E. in Computer Science and Engineering
+                    </strong>
+
+                    <br>
+
+                    Daegu Gyeongbuk Institute of Science and Technology (DGIST)
+
+                    <br>
+
+                    <span class="education-sub">
+                        GPA: 3.9 / 4.3
+                    </span>
+                </div>
+
+            </div>
+
         </section>
 
 
-        <!-- Publications Section -->
+        <!-- =========================
+             Publications
+        ========================== -->
         <section id="publications" class="reveal">
+
             <h2>Publications</h2>
 
-            <!-- Conference -->
-            <div class="card">
-                <h3>📢 Conference</h3>
 
-                <div class="pub-item">
-                    <h4>
-                        Optimizing Dependent Task Offloading with Hop Constraints in Vehicular Edge Computing
-                    </h4>
+            <!-- Journal Papers -->
+            <h3 class="publication-category">
+                Journal Papers
+            </h3>
 
-                    <p style="color: var(--text-secondary); font-size: 0.9rem;">
-                        Chien-Sheng Chiang,
-                        <strong>SangEun Park</strong>,
-                        Hao-Tse Hsiao,
-                        BaekGyu Kim,
-                        and Chung-Wei Lin*.
-                        <em>IEEE Vehicular Technology Conference (VTC2026-Fall)</em>,
-                        Boston, U.S.A., Sep. 2026.
-                        <strong>To appear.</strong>
-                    </p>
 
-                    <div class="tag-container">
-                        <span class="tag">Vehicular Edge Computing</span>
-                        <span class="tag">Task Offloading</span>
-                        <span class="tag">Dependent Tasks</span>
-                        <span class="tag">Hop Constraints</span>
-                    </div>
+            <div class="pub-item">
+
+                <div class="pub-title">
+                    <span class="pub-index">[J1]</span>
+
+                    Task-Adaptive Offloading Strategy in Vehicular Edge Computing
                 </div>
-            </div>
 
+                <div class="pub-authors">
+                    <strong>SangEun Park</strong>,
+                    Chung-Wei Lin,
+                    Hoon Sung Chwa,
+                    and BaekGyu Kim*
+                </div>
 
-            <!-- Journal -->
-            <div class="card" style="margin-top: 2rem;">
-                <h3>📜 Journal</h3>
+                <div class="pub-venue">
+                    <em>IEEE Internet of Things Journal</em>,
+                    2026.
+                    <strong>Accepted.</strong>
+                </div>
 
-                <div class="pub-item">
-
-                    <h4 style="margin-bottom: 0.5rem;">
-                        Task-Adaptive Offloading Strategy in Vehicular Edge Computing
-                    </h4>
-
-                    <p style="color: var(--text-secondary);
-                              font-size: 0.9rem;
-                              margin-bottom: 0.5rem;">
-                        <strong>SangEun Park</strong>,
-                        Chung-Wei Lin,
-                        Hoon Sung Chwa,
-                        BaekGyu Kim*.
-                        <em>IEEE Internet of Things Journal</em>, 2026.
-                        <strong>Accepted.</strong>
-                    </p>
-
-                    <div class="tag-container">
-                        <span class="tag">Vehicular Edge Computing</span>
-                        <span class="tag">Task Offloading</span>
-                        <span class="tag">Real-Time Scheduling</span>
-                        <!-- <span class="tag">JCR Q1</span> -->
-                        <!-- <span class="tag">Top 6%</span> -->
-                    </div>
-
-                    <p style="color: var(--text-secondary);
-                              font-size: 0.85rem;
-                              margin-top: 0.75rem;">
-                        2025 JCR Q1 · Computer Science, Information Systems ·
-                        Rank 16/266 · Top 6%
-                    </p>
-
+                <div class="pub-note">
+                    2025 JCR Q1 · Computer Science, Information Systems ·
+                    Rank 16/266 · Top 6%
                 </div>
 
             </div>
+
+
+            <!-- Conference Papers -->
+            <h3 class="publication-category">
+                Conference Papers
+            </h3>
+
+
+            <div class="pub-item">
+
+                <div class="pub-title">
+                    <span class="pub-index">[C1]</span>
+
+                    Optimizing Dependent Task Offloading with Hop Constraints
+                    in Vehicular Edge Computing
+                </div>
+
+                <div class="pub-authors">
+                    Chien-Sheng Chiang,
+                    <strong>SangEun Park</strong>,
+                    Hao-Tse Hsiao,
+                    BaekGyu Kim,
+                    and Chung-Wei Lin*
+                </div>
+
+                <div class="pub-venue">
+                    <em>
+                        IEEE Vehicular Technology Conference
+                        (VTC2026-Fall)
+                    </em>,
+                    Boston, U.S.A.,
+                    Sep. 2026.
+                    <strong>To appear.</strong>
+                </div>
+
+            </div>
+
         </section>
 
     </div>
 
 
+    <!-- =========================
+         Footer
+    ========================== -->
     <footer>
+
         <div class="container">
-            <p>&copy; 2026 SangEun Park. All rights reserved.</p>
+            <p>
+                &copy; 2026 SangEun Park
+            </p>
         </div>
+
     </footer>
 
+
     <script src="script.js"></script>
+
 </body>
 
 </html>
