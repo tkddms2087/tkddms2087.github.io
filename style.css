@@ -79,7 +79,17 @@ header {
     gap: 12px;
     margin-top: 1.4rem;
 }
+.section-title {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+}
 
+.author-note {
+    font-size: 0.75rem;
+    font-weight: 400;
+    color: var(--text-secondary);
+}
 .social-icon {
     width: 42px;
     height: 42px;
